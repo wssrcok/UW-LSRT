@@ -1,5 +1,5 @@
 $(function() {
-	$('#name').keyup(function(){
-		$('#greet').text('Now registering ' + $('#name').val());
+	$('#button').click(function(){
+		$('#process').text('Now registering ' + $('#name').val());
 	})
 })
