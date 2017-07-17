@@ -1,5 +1,14 @@
 $(function() {
-
+	$.ajax({ url: 'https://sdb.admin.uw.edu/timeschd/uwnetid/sln.asp?QTRYR=AUT+2017&SLN=13862', 
+		success: function() { 
+			if ((document.documentElement.textContent || document.documentElement.innerText)
+			.indexOf('** Closed **') > -1) {
+				$('#found').text("yeah, we found it's closed");
+			} else {
+				$('#found').text("it's still open");
+			}
+		} 
+	});
 	chrome.storage.sync.get('registering', function(course) {
 		$('#process').text(course.registering);
 	})
@@ -18,7 +27,7 @@ $(function() {
 				newCourses = "";
 			} else {
 				if (input != "") {
-					newCourses += "\nNow registering "  + input;
+					newCourses += "Now registering "  + input;
 				}
 
 				chrome.storage.sync.set({'registering': newCourses});
@@ -28,3 +37,12 @@ $(function() {
 		});
 	});
 });
+/*
+if (
+  (
+    document.documentElement.textContent || document.documentElement.innerText
+  ).indexOf('Done successfuly') > -1
+) {
+  // Do something...
+}
+*/
