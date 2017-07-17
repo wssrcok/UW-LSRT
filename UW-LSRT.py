@@ -31,7 +31,7 @@ def get_status(sln):
 netID = raw_input("Enter your NetID: ")
 password = raw_input("Enter your Password: ")
 
-browser = webdriver.Firefox()
+browser = webdriver.Chrome()
 login(netID, password)
 sln = raw_input("what's the SLN of your course? ")
 get_status(sln)
