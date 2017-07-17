@@ -1,6 +1,7 @@
 # UW-LSRT
 -------
 **Description**
+
 UW LightSpeedRegistrationTool helps UW students to be the first one to register whatever class they wanted to.
 ---------
 **installation**
@@ -21,6 +22,3 @@ after all above installed go to **Terminal** go to your file directory and type 
 
 check for errors and google it to fix(could be issue with python version or webdriver install location).
 
-
-
-> Written with [StackEdit](https://stackedit.io/).
