@@ -1,6 +1,6 @@
 # UW-LSRT
 -------
-**Description**
+**Description:**
 UW LightSpeedRegistrationTool helps UW students to be the first one to register whatever class they wanted to.
 
 ---------
