@@ -1,8 +1,8 @@
 # UW-LSRT
 -------
-####**Description**
+###**Description**
 UW LightSpeedRegistrationTool helps UW students to be the first one to register whatever class they wanted to.
-####**installation**
+###**installation**
 - Python is required (my code uses python 2.7)
 
 
